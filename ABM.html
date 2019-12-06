@@ -1,12 +1,22 @@
 <HTML>
 <style>
-  #example1 {
-  border: 5px solid blue;
+ #headingbox {
+  width: 500px;
+  height: 100px;
+  border: 5px solid yellow;
+  background-color:yellow;
+  position:relative; top:40px;
+  }
+  #mainbox {
+  border: 5px solid black;
   padding: 5px;
   box-shadow: 5px 10px grey;
+  position:relative; top:50px;
   }
     H1 {
   font-size: 40px;
+  text-align: center;
+  text-colour: white;
 }
 H2 {
   font-size: 30px;
@@ -17,26 +27,55 @@ p {
 a {
   font-size: 30px;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding:0px 10px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: red;
+  }
   </style>
   
-<TITLE> Simon's ABM</TITLE>
-  <H1> ABM Description </H1> </br>
-<a href= "/" >Homepage</a>
-  </br>
-<a href= "/aboutme.html" >Find out more about me here</a>
-  <div id="example1">
-  <p></br>
-  This ABM uses agents to move around a 300x300 grid environment and eat the environment. </br>
-  This agents will move randomly, and move more quickly if they have less food stored, as they are hungry! </br>
-  The agents will share food with other sheep nearby, but if they have less food stored will be more greedy.</br>
-  The agents will throw up if their food store exceeds 100. </br>
-  The agents can become ill, and will be ill for a maximum of 5, until they either get better or may perhaps die from the illness. </br>
-  The predators will move around the 300x300 grid and eat the agents in the area if they are within a certain distance of them.</br>
-  The predators will throw up if their food store exceeds 200.</br>
-  The predators can kill the agents when they capture them to eat. </br>
+<TITLE> Simon's Programming Store</TITLE>
+<body></body>
+<ul <p style="font-family:courier;">
+  <li><a href="/">Homepage</a></li>
+  <li><a href="/ABM.html">ABM</a></li>
+  <li><a href= "/GIS.html"> GIS Portfolio</a></li>
+  <li><a href="/aboutme.html">About Me</a></li>
+</ul>
+
+  <div id="headingbox">
+ <h1 style="font-family:verdana;">Homepage</h1>
+ </div>
+  <div id="mainbox">
+  <p style="font-family:verdana;"><br>This ABM uses agents to move around a 300x300 grid environment and eat the environment. <br>
+  The agents will move randomly, and move more quickly if they have less food stored, as they are hungry! <br>
+  The agents will share food with other sheep nearby, but if they have less food stored will be more greedy.<br>
+  The agents will throw up if their food store exceeds 100. <br>
+  The agents can become ill, and will be ill for a maximum of 5, until they either get better or may perhaps die from the illness. <br>
+  The predators will move around the 300x300 grid and eat the agents in the area if they are within a certain distance of them.<br>
+  The predators will throw up if their food store exceeds 200.<br>
+  The predators can kill the agents when they capture them to eat. <br>
+  
 </br></p>
 </div>
 </br>
-<H2> ABM Code </H2>
 </body>
 </HTML>
