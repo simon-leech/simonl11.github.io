@@ -72,14 +72,15 @@ li a:hover {
  <h1 style="font-family:verdana;">ABM</h1>
  </div>
   <div id="mainbox">
-  <p style="font-family:verdana;"><br>This ABM uses agents to move around a 300x300 grid environment and eat the environment. <br>
+  <p style="font-family:verdana;"><br>This ABM uses agents to move around a 100x100 grid environment and eat the environment. <br>
   The agents will move randomly, and move more quickly if they have less food stored, as they are hungry! <br>
   The agents will share food with other sheep nearby, but if they have less food stored will be more greedy.<br>
   The agents will throw up if their food store exceeds 100. <br>
-  The agents can become ill, and will be ill for a maximum of 5, until they either get better or may perhaps die from the illness. <br>
-  The predators will move around the 300x300 grid and eat the agents in the area if they are within a certain distance of them.<br>
-  The predators will throw up if their food store exceeds 200.<br>
-  The predators can kill the agents when they capture them to eat. <br>
+  The agents have a 25% chance of becoming ill, and will be ill for a maximum of 4, until they either get better or may die from the illness. <br>
+  The agents have a 10% chance of passing on the infection to other agents if they are nearby. <br> 
+  The predators will move around the 100x100 grid twice as fast as the agents and eat the agents if they are within a certain distance of them.<br>
+  The predators will throw up if their food store exceeds 300.<br>
+  The predators have a 30% chance of killing the agents if they are within a certain distance of them to eat. <br>
   
 <br></p>
 </div>
