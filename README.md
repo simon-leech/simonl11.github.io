@@ -1,16 +1,17 @@
 # simonl11.github.io
 
 Contents of Files: 
-/agentframework.html - simple webpage containing all the code for the Agent and Predator classes used in the model.
-/Model.html - simple webpage containing the code for the Model to run.
-/aboutme.html - simple webpage outlining a description of myself.
+/agentframework.html - simple webpage containing all the code for the Agent and Predator classes used in the model.<br>
+/Model.html - simple webpage containing the code for the Model to run.<br>
+/aboutme.html - simple webpage outlining a description of myself.<br>
 
 Running the model:
-This is an Agent-Based Model that includes agents (sheep) and Predators (wolves) that will eat the sheep. The sheep can also be killed by an infection in the model. 
-The model will run until the user-specified number of iterations has been completed, or all the agents have been killed.
-The model allows for user input to set parameters, but if the user input is not an integer default values will be used instead.
-When the model runs, it is expected that you will see filled circles of white and grey (agents) move around the area, and red triangles (predators) also moving. Once an agent has been killed, a print statement will occur notifying you how they died, and a grey cross will appear in the location they died.
-Model should be run through Spyder, using the GUI to enhance the model and its animation.
+This is an Agent-Based Model that includes agents (sheep) and Predators (wolves) that will eat the sheep. The sheep can also be killed by an infection in the model. <br>
+The model will run until the user-specified number of iterations has been completed, or all the agents have been killed.<br>
+The model allows for user input to set parameters, but if the user input is not an integer default values will be used instead.<br>
+When the model runs, it is expected that you will see filled circles of white and grey (agents) move around the area, and red triangles (predators) also moving. <br>
+Once an agent has been killed, a print statement will occur notifying you how they died, and a grey cross will appear in the location they died.<br>
+Model should be run through Spyder, using the GUI to enhance the model and its animation. <br>
 
 The Model code:
 This ABM uses agents to move around a 100x100 grid environment and eat the environment. <br>
