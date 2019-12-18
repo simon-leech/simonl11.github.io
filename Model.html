@@ -12,9 +12,9 @@
  /* end of adaptation */
  /* the following code is adapted from: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
   #mainbox {
-  border: 5px solid black;
-  padding: 5px;
-  box-shadow: 5px 10px grey;
+  border:
+  padding: 0px; 
+  box-shadow: 0px 0px grey;
   position:relative; top:50px;
   }
  /* end of adaptation */
@@ -59,21 +59,22 @@ li a:hover {
  /* end of adaptation */
   </style>
   
-<TITLE> Simon's ABM</TITLE>
+<TITLE> Simon's Model</TITLE>
 <body>
 <ul>
   <li><a href="/">Homepage</a></li>
-  <li><a href="/ABM.html">Model</a></li>
+  <li><a href="/Model.html">Model</a></li>
   <li><a href="/aboutme.html">Agentframework</a></li>
-  <li><a href= "/GIS.html"> GIS Portfolio</a></li>
   <li><a href="/aboutme.html">About Me</a></li>
 </ul>
 
   <div id="headingbox">
- <h1 style="font-family:verdana;">ABM</h1>
+ <h1 style="font-family:verdana;">Model Code</h1>
  </div>
   <div id="mainbox">
-  <p style="font-family:verdana;"><br>Timport matplotlib.pyplot, matplotlib.animation, agentframework, sys, matplotlib, tkinter, requests, bs4
+  <p style="font-family:verdana;"> 
+<pre>  
+<code>import matplotlib.pyplot, matplotlib.animation, agentframework, sys, matplotlib, tkinter, requests, bs4
 #Read in the environment data as f
 f= open("in.txt")
 #Read in the x and y data as r from the geog.leeds.ac.uk website
@@ -249,7 +250,7 @@ def gen_function(b = [0]):
     a = 0
     global carry_on #Not actually needed as we're not assigning, but clearer
     while (a < num_of_iterations) & (carry_on) :
-        yield a			# Returns control and waits next call.
+        yield a  		# Returns control and waits next call.
         a = a + 1
     else:
         print("Stopping condition was reached, as the model ran for the number of iterations you specified")
@@ -292,7 +293,8 @@ for i in range(len(agents)):
     f3.write(str(agents[i].store))
     f3. write ("\n")
 f3.close()
-  
+</code>
+</pre>
 <br></p>
 </div>
 <br>
