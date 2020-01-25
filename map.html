@@ -10,10 +10,26 @@
 <style>
 	body { margin: 0; padding: 0; }
 	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+	/* the following code is adapted from: https://docs.mapbox.com/mapbox-gl-js/example/fitbounds/ */
+	#fit {
+		display: block;
+		position: relative;
+		margin: 0px auto;
+		width: 50%;
+		height: 40px;
+		padding: 10px;
+		border: none;
+		border-radius: 3px;
+		font-size: 12px;
+		text-align: center;
+		color: #fff;
+		background: #ee8a65;
 </style>
 </head>
 <body>
 <div id="map"></div>
+<br />
+<button id="fit">Display Woodhouse Ridge</button>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2ltb25sMTEiLCJhIjoiY2s1dHBxejRiMHBpcjNrbnd4Z3R6eWhjcyJ9.lFOgWPzWjq91hQTg6acmkg';
 var map = new mapboxgl.Map({
@@ -21,6 +37,13 @@ var map = new mapboxgl.Map({
 	style: 'mapbox://styles/simonl11/ck5tq2qw11a3y1ito2pjk7086', //hosted style id
 	center: [-1.549325,53.816487], // starting position [lng, lat]
 	zoom: 9 // starting zoom
+/* following code adapted from: https://docs.mapbox.com/mapbox-gl-js/example/fitbounds/ */
+});
+document.getElementById('fit').addEventListener('click', function() {
+map.fitBounds([
+[53.817738, -1.553477],
+[53.815388, -1.546826]
+]);
 });
 </script>
  
