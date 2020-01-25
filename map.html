@@ -29,7 +29,7 @@
 <body>
 <div id="map"></div>
 <br />
-<button id="fit">Display Woodhouse Ridge</button>
+<button id="fit">Zoom to Woodhouse Ridge</button>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2ltb25sMTEiLCJhIjoiY2s1dHBxejRiMHBpcjNrbnd4Z3R6eWhjcyJ9.lFOgWPzWjq91hQTg6acmkg';
 var map = new mapboxgl.Map({
@@ -41,8 +41,8 @@ var map = new mapboxgl.Map({
 });
 document.getElementById('fit').addEventListener('click', function() {
 map.fitBounds([
-[53.817738, -1.553477],
-[53.815388, -1.546826]
+[-1.553477,53.817738],
+[-1.546826,53.815388]
 ]);
 });
 </script>
