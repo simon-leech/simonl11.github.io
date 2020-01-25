@@ -3,13 +3,13 @@
 /* the following code is adapted from: https://docs.mapbox.com/mapbox-gl-js/example/custom-style-id/ */
 <head>
 <meta charset="utf-8" />
-<title>Wood Woodyyyy</title>
+<title>Wooda Dub Dub</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
 <style>
 	body { margin: 0; padding: 0; }
-	#map { position: relative; top: 20; bottom: 20; width: 60%; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 </head>
 <body>
@@ -19,8 +19,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2ltb25sMTEiLCJhIjoiY2s1dHBxejRiMHBpcjNrbnd4Z
 var map = new mapboxgl.Map({
 	container: 'map', // container id
 	style: 'mapbox://styles/simonl11/ck5tq2qw11a3y1ito2pjk7086', //hosted style id
-	center: [53.816487, -1.549325], // starting position [lng, lat]
-	zoom: 6 // starting zoom
+	center: [-1.549325,53.816487], // starting position [lng, lat]
+	zoom: 9 // starting zoom
 });
 </script>
  
