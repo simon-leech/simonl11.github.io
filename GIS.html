@@ -1,8 +1,8 @@
 <!doctype HTML>
 <HTML>
 <head>
-   <script src="hmapbox://styles/simonl11/ck5tq2qw11a3y1ito2pjk7086"></script>
-<link href="mapbox://styles/simonl11/ck5tq2qw11a3y1ito2pjk7086.css" rel="stylesheet" />
+   <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+   <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
 </head>
 <style>
  /* the following code is adapted from: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_border */
@@ -82,10 +82,10 @@ li a:hover {
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1Ijoic2ltb25sMTEiLCJhIjoiY2s1dHBxejRiMHBpcjNrbnd4Z3R6eWhjcyJ9.lFOgWPzWjq91hQTg6acmkg';
 var map = new mapboxgl.Map({
-container: 'map', // container id
-style: 'mapbox://styles/simonl11/ck5tq2qw11a3y1ito2pjk7086', // stylesheet location
-center: [-51.3, 4], // starting position [lng, lat]
-zoom: 9 // starting zoom
+	container: 'map', // container id
+	style: 'mapbox://styles/simonl11/ck5tq2qw11a3y1ito2pjk7086', //hosted style id
+	center: [-51.3, 4], // starting position [lng, lat]
+	zoom: 9 // starting zoom
 });
 </script>
 <br></p>
