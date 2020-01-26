@@ -3,7 +3,7 @@
 /* the following code is adapted from: https://docs.mapbox.com/mapbox-gl-js/example/custom-style-id/ */
 <head>
 <meta charset="utf-8" />
-<title>WRAG MAP</title>
+<title>WRAG</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
@@ -27,7 +27,7 @@
 		
 	#menu {
 		background: #fff;
-		position: relative;
+		position: absolute;
 		z-index: 1;
 		top: 50px;
 		right: 10px;
@@ -101,14 +101,14 @@ trackUserLocation: true
 );
 	
 map.on('load', function() {
-map.addSource('woodhouse-ridge-action-days', {
+map.addSource('museums', {
 type: 'vector',
 url: 'mapbox://mapbox.2opop9hr'
 });
 map.addLayer({
-'id': 'woodhouse-ridge-action-days',
-'type': 'vector',
-'source': 'woodhouse-ridge-action-days',
+'id': 'museums',
+'type': 'circle',
+'source': 'museums',
 'layout': {
 'visibility': 'visible'
 },
@@ -116,18 +116,18 @@ map.addLayer({
 'circle-radius': 8,
 'circle-color': 'rgba(55,148,179,1)'
 },
-'source-layer': 'woodhouse-ridge-action-days'
+'source-layer': 'museum-cusco'
 });
  
-map.addSource('mapbox-terrain-rgb', {
+map.addSource('contours', {
 type: 'vector',
-url: 'mapbox://mapbox.mapbox-terrain-rgb'
+url: 'mapbox://mapbox.mapbox-terrain-v2'
 });
 map.addLayer({
-'id': 'terrain',
-'type': 'raster',
-'source': 'mapbox-terrain-rgb',
-'source-layer': 'mapbox-terrain-rgb',
+'id': 'contours',
+'type': 'line',
+'source': 'contours',
+'source-layer': 'contour',
 'layout': {
 'visibility': 'visible',
 'line-join': 'round',
