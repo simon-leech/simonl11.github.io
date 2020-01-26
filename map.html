@@ -3,7 +3,7 @@
 /* the following code is adapted from: https://docs.mapbox.com/mapbox-gl-js/example/custom-style-id/ */
 <head>
 <meta charset="utf-8" />
-<title>Woodhouse Ridge</title>
+<title>Chob</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
@@ -47,6 +47,15 @@ map.fitBounds([
 });
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
+	// Add geolocate control to the map.
+map.addControl(
+new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+})
+);
 </script>
 </body>
 </html>
